@@ -1,0 +1,19 @@
+server:
+  port: 9000
+  shutdown: graceful
+  compression:
+    enabled: true
+
+spring:
+  application:
+    name: api
+  profiles:
+    default: local
+
+dgs:
+  graphql:
+    introspection:
+      enabled: true
+    graphiql:
+      enabled: true
+    path: /graphql/**

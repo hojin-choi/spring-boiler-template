@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: api
+  batch:
+    job:
+      enabled: true
+    jdbc:
+      initialize-schema: always
+  main:
+    web-application-type: none
+    allow-bean-definition-overriding: true
+  profiles:
+    default: local
+  datasource:
+    batch:
+      jdbcUrl: jdbc:mysql://localhost:44200/sample?useCursorFetch=true&useUnicode=yes&characterEncoding=UTF-8&serverTimezone=UTC
+      driverClassName: com.mysql.cj.jdbc.Driver
+      maximum-pool-size: 5
+      max-lifetime: 35000
+      idle-timeout: 30000
+      userName: dbuser
+      password:
+

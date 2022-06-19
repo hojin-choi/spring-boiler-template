@@ -1,0 +1,30 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# space indentation for JSON and YML
+[*.{json,yml}]
+indent_size = 2
+
+# space indentation for Kotlin
+[*.{kt,kts}]
+indent_size = 4
+max_line_length = 120
+
+[**/test/**/*.{kt,kts}]
+max_line_length = off
+
+[**/generated/**/*.{kt,kts}]
+max_line_length = off
+
+# ktlint rules
+# disabled_rules=import-ordering,no-wildcard-imports,parameter-list-wrapping,indent

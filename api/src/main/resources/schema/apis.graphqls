@@ -1,0 +1,21 @@
+type Query {
+    """
+    sample 을 반환한다.
+    """
+    sample(id: ID!): Sample
+}
+
+"""
+Sample
+"""
+type Sample {
+    """
+    ID
+    """
+    id: ID!
+
+    """
+    이름
+    """
+    name: String!
+}
